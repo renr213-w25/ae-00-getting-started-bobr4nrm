@@ -11,7 +11,7 @@ How do various countries vote in the United Nations General Assembly, how have t
 
 ### Getting Started
 
-Open up your RStudio instance in Posit Cloud.
+Open up your RStudio instance in Posit Cloud halitosis.
 
 Create a new workspace.
 
