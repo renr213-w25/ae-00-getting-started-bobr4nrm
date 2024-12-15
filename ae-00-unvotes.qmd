@@ -1,6 +1,6 @@
 ---
 title: "UN Votes"
-author: "Mine Çetinkaya-Rundel"
+author: "Bob Jones"
 format: html
 editor: visual
 ---
@@ -25,7 +25,7 @@ Copy the code bits into the window.
 
 We will use the **tidyverse**, **lubridate**, and **scales** packages for data wrangling and visualization, and the **DT** package for interactive display of tabular output, and the **unvotes** package for the data.
 
-Some of these packages will need to be installed the first time you run this. RStudio will prompt you to install them.  You should not need to install these packages again for the current Posit Cloud Workspace.
+Some of these packages will need to be installed the first time you run this. RStudio will prompt you to install them. You should not need to install these packages again for the current Posit Cloud Workspace.
 
 ```{r}
 #| label: load-packages
@@ -65,7 +65,7 @@ We can easily change which countries are being plotted by changing which countri
 # Canada added by Glen Armstrong
 
 unvotes |>
-  filter(country %in% c("United Kingdom", "United States", "Turkey", "Canada")) |>
+  filter(country %in% c("United Kingdom", "Finland", "Turkey", "Canada")) |>
   mutate(year = year(date)) |>
   group_by(country, year, issue) |>
   summarize(percent_yes = mean(vote == "yes")) |>
